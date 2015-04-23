@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demos.telerik.com/kendo-ui/grid/remote-data-binding">
+    <style>
+        html {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.min.css" />
+    <link rel="stylesheet" href="http://cdn.kendostatic.com/2015.1.408/styles/kendo.dataviz.material.min.css" />
+
+    <script src="http://cdn.kendostatic.com/2015.1.408/js/jquery.min.js"></script>
+    <script src="http://cdn.kendostatic.com/2015.1.408/js/kendo.all.min.js"></script>
+    <script type="text/javascript">
+        var courses = [
+    { CourseNumber: "CS501", CourseName: "Intro to Java", Prereq: "CS400", CourseCoordinator: "Jurkat", TypiWC: "Fall" },
+    { CourseNumber: "CS502", CourseName: "Intro to C++", Prereq: "CS401", CourseCoordinator: "Pfeffer", TypiWC: "Spring" },
+        { CourseNumber: "CS503", CourseName: "TextMining", Prereq: "CS403", CourseCoordinator: "Pfeffer", TypiWC: "Spring,Fall" },
+          { CourseNumber: "CS504", CourseName: "Web Mining", Prereq: "CS403", CourseCoordinator: "Lappas", TypiWC: "Spring,Fall,Summer-1" },
+             { CourseNumber: "CS505", CourseName: "Enterprise and Cloud Computing", Prereq: "CS406", CourseCoordinator: "Duggan", TypiWC: "Spring,Fall,Summer-1" }
+        ];
+    </script>
+</head>
+<body>
+
+    <div id="example">
+        <!--var courses = [{ CourseNumber: "CS501", CourseName: "Intro to Java", Prereq: "CS400", CourseCoordinator: "Jurkat", TypiWC: "Fall" },
+        { CourseNumber: "CS502", CourseName: "Intro to C++", Prereq: "CS401", CourseCoordinator: "Pfeffer", TypiWC: "Spring" }
+        ]-->
+        <div id="grid"></div>
+        <script>
+            $(document).ready(function () {
+                $("#grid").kendoGrid({
+                    dataSource: {
+                        data: courses,
+                        schema: {
+                            model: {
+                                fields: {
+                                    CourseNumber: { type: "string" },
+                                    CourseName: { type: "string" },
+                                    CourseCoordinator: { type: "string" },
+                                    Prereq: { type: "string" },
+                                    TypiWC: { type: "string" }
+                                }
+                            }
+                        },
+                        pageSize: 5,
+                       Paging: true,
+                        Filtering: true,
+                        Sorting: true
+                    },
+                    height: 700,
+                    filterable: true,
+                    sortable: true,
+                    pageable: true,
+                    groupable:true,
+                    columns: [{
+                            field: "CourseNumber",
+                            filterable: false
+                        },{
+                            field: "CourseName",
+                            title: "Course Name"
+                        }, {
+                            field: "CourseCoordinator",
+                            title: "Course Coordinator"
+                        }, {
+                            field: "Prereq",
+                            title: "Pre req"
+                        }, {
+                            field: "TypiWC",
+                            title: "Typi WC"
+                        }
+                    ]
+                });
+            });
+        </script>
+    </div>
+
+
+</body>
+</html>
