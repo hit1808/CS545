@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+Template Name: Academic Education V2
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Latest compiled and minified CSS -->
+
+<!-- Optional theme -->
+
+
+
+    <!--<base href="http://demos.telerik.com/kendo-ui/grid/remote-data-binding">-->
+  
+    <title>Computer Science Masters Courses </title>
+	 <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="content/shared/js/console.js"></script>
+    <script src="js/jszip.min.js"></script>
+	<link href="../content/shared/styles/examples-offline.css" rel="stylesheet">
+    <link href="styles/kendo.common.min.css" rel="stylesheet">
+    <link href="styles/kendo.rtl.min.css" rel="stylesheet">
+    <link href="styles/kendo.default.min.css" rel="stylesheet">
+    <link href="styles/kendo.dataviz.min.css" rel="stylesheet">
+    <link href="styles/kendo.dataviz.default.min.css" rel="stylesheet">
+	
+	<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" >
+   
+          <script type="text/javascript">
+        var courses = [
+    { Stream: "Computer Science", CourseNumber: "CS501", CourseName: "Introduction to Java Programming", Prereq: "CS400", CourseCoordinator: "Jurkat", TypiWC: "Fall", Credits: "3", Day: "Monday", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+     { Stream: "Computer Science", CourseNumber: "CS503", CourseName: "Discrete Mathematics for Cryptography", Prereq: "MA502 or CS135", CourseCoordinator: "Suffel", TypiWC: "Spring,Fall", Credits: "3", Day: "Wednesday", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+      { Stream: "Computer Science", CourseNumber: "CS506", CourseName: "Introduction to IT Security", Prereq: "none", CourseCoordinator: "Lappas", TypiWC: "Spring,Fall,Summer-1", Credits: "3", Day: "Tuesday", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+       { Stream: "Computer Science", CourseNumber: "CS510", CourseName: "Principles of Programming Langauges", Prereq: "CS406", CourseCoordinator: "Duggan", TypiWC: "Spring,Fall,Summer-1", Credits: "3", Day: "Friday", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+        { Stream: "Computer Science", CourseNumber: "CS521", CourseName: "TCP/IP Networking", Prereq: "CS520 or CS492", CourseCoordinator: "Rahman", TypiWC: "Spring", Credits: "3", Day: "", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+        { Stream: "Computer Science", CourseNumber: "CS538", CourseName: "Visual Analytics", Prereq: "CS 590 or CS 385 or CS 182", CourseCoordinator: "Duggan", TypiWC: "Spring", Credits: "3", Day: "", Time: "6.15-8.45pm", DegreeLevel: "Masters" },
+         { Stream: "Computer Science", CourseNumber: "CS570", CourseName: "	Introduction to Programming in C++", Prereq: "CS401", CourseCoordinator: "Pfeffer", TypiWC: "Spring", Credits: "3", Day: "Thursday", Time: "12.00-2.30pm", DegreeLevel: "Masters" },
+
+	
+       
+        ];
+     </script>
+    
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row0">
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">A - Z Index</a></li>
+        <li><a href="#">Student Login</a></li>
+        <li><a href="#">Staff Login</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+        <h1><img src='http://edtechtimes.com/wp-content/uploads/2013/08/Steves-logo.jpg' style="height: 80px;width:160px"/></h1>
+  
+    </div>
+    <div class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Search:</legend>
+          <input type="text" value="" placeholder="Search Here">
+          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div class="rounded">
+    <nav id="mainav" class="clear"> 
+      <!-- ################################################################################################ -->
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Academics</a>
+          <ul>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Prospective Students</a></li>
+           
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Program</a>
+          <ul>
+            <li><a href="#">Program Portfolio</a></li>
+            <li><a class="drop" href="#">Programs</a>
+              <ul>
+                <li><a href="Masters.html">Masters</a></li>
+                <li><a href="Bachelor.html">Bachelor</a></li>
+				<li><a href="Phd.html">PhD</a></li>
+              </ul>
+            </li>
+            <li><a href="coursesearch.html">Course Search Tool</a></li>
+		  </ul>
+        </li>
+        <li><a href="#">It Support</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <!-- ################################################################################################ --> 
+    </nav>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div >
+
+    <div class="rounded">
+	          
+<Strong><span style="color:black"> Computer Science Masters Courses</span></Strong>
+        <main class="container clear"> 
+
+
+                <div id="example">
+                    <!--var courses = [{ CourseNumber: "CS501", CourseName: "Intro to Java", Prereq: "CS400", CourseCoordinator: "Jurkat", TypiWC: "Fall" },
+                        { CourseNumber: "CS502", CourseName: "Intro to C++", Prereq: "CS401", CourseCoordinator: "Pfeffer", TypiWC: "Spring" }
+                        ]-->
+						
+                    <div id="grid"></div>
+                    <script>
+                        $(document).ready(function () {
+                            $("#grid").kendoGrid({
+            toolbar: ["excel"],
+            excel: {
+                fileName: "Export-Courses.xlsx",
+                
+                filterable: true
+            },
+                                dataSource: {
+                                    data: courses,
+                                    schema: {
+                                        model: {
+                                            fields: {
+												DegreeLevel:{type:"string"},
+                                         
+                                                CourseNumber: { type: "string" },
+                                                CourseName: { type: "string" },
+                                                CourseCoordinator: { type: "string" },
+                                                Prereq: { type: "string" },
+                                                TypiWC: { type: "string" },
+                                                Credits:{type:"int"},
+                                                Day:{type:"string"},
+                                                Time:{type:"string"}
+                                            }
+                                        }
+                                    },
+                                    pageSize: 13,
+                                    Paging: true,
+                                    Filtering: true,
+                                    Sorting: true
+                                },
+                                height:700,
+                                filterable: true,
+                                sortable: true,
+                                pageable: true,
+                                groupable:true,
+								 columnMenu: true,
+                                columns: [
+								
+                                    {
+                                        field: "CourseNumber"
+                           
+                                    },{
+                                        field: "CourseName",
+                                        title: "Course Name"
+                                    }, {
+                                        field: "CourseCoordinator",
+                                        title: "Course Coordinator"
+                                    }, {
+                                        field: "Prereq",
+                                        title: "Pre req"
+                                    }, {
+                                        field: "TypiWC",
+                                        title: "Typi WC"
+                                    },
+                                    {
+                                        field:"Credits"},
+                                    {field:"Day"},
+                                    {field:"Time"}
+                                ]
+                            });
+                        });
+                    </script>
+					
+                </div>
+          
+
+        </main>
+    </div>
+
+</div>
+<br/>
+<div class="wrapper row4">
+  <div class="rounded">
+    <footer id="footer" class="clear"> 
+      <!-- ################################################################################################ -->
+      <div class="one_third first">
+        <figure class="center"><img class="btmspace-15" src="images/demo/worldmap.png" alt="">
+          <figcaption><a href="#">Find Us With Google Maps &raquo;</a></figcaption>
+        </figure>
+      </div>
+      <div class="one_third">
+        <address>
+        1 castle point terrace<br>
+        Hoboken/New Jersey<br>
+        07037<br>
+        <br>
+        <i class="fa fa-phone pright-10"></i> 000 000 0000<br>
+        <i class="fa fa-envelope-o pright-10"></i> <a href="#">admin@stevens.edu</a>
+        </address>
+      </div>
+      <div class="one_third">
+        <p class="nospace btmspace-10">Stay Up to Date With What's Happening</p>
+        <ul class="faico clear">
+          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+          <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+        <form class="clear" method="post" action="#">
+          <fieldset>
+            <legend>Subscribe To Our Newsletter:</legend>
+            <input type="text" value="" placeholder="Enter Email Here&hellip;">
+            <button class="fa fa-sign-in" type="submit" title="Sign Up"><em>Sign Up</em></button>
+          </fieldset>
+        </form>
+      </div>
+      <!-- ################################################################################################ --> 
+    </footer>
+  </div>
+
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Stevens Institute of Technology</a></p>
+    
+    
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- JAVASCRIPTS --> 
+
+<script src="layout/scripts/jquery.fitvids.min.js"></script> 
+<script src="layout/scripts/jquery.mobilemenu.js"></script> 
+<script src="layout/scripts/tabslet/jquery.tabslet.min.js"></script>
+</body>
+</html>
+
